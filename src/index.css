@@ -212,16 +212,57 @@
     }
     /* Responsive utilities */
     .container-responsive {
-        @apply max-w-7xl mx-auto px-4 sm: px-6 lg: px-8;
+        @apply max-w-7xl mx-auto px-4;
     }
     .text-responsive {
-        @apply text-sm sm: text-base lg: text-lg;
+        @apply text-sm;
     }
     .heading-responsive {
-        @apply text-2xl sm: text-3xl lg: text-4xl xl: text-5xl;
+        @apply text-2xl;
     }
     .hero-heading-responsive {
-        @apply text-4xl sm: text-5xl md: text-6xl lg: text-7xl xl: text-8xl;
+        @apply text-4xl;
+    }
+    @media (min-width: 640px) {
+        .container-responsive {
+            @apply px-6;
+        }
+        .text-responsive {
+            @apply text-base;
+        }
+        .heading-responsive {
+            @apply text-3xl;
+        }
+        .hero-heading-responsive {
+            @apply text-5xl;
+        }
+    }
+    @media (min-width: 768px) {
+        .hero-heading-responsive {
+            @apply text-6xl;
+        }
+    }
+    @media (min-width: 1024px) {
+        .container-responsive {
+            @apply px-8;
+        }
+        .text-responsive {
+            @apply text-lg;
+        }
+        .heading-responsive {
+            @apply text-4xl;
+        }
+        .hero-heading-responsive {
+            @apply text-7xl;
+        }
+    }
+    @media (min-width: 1280px) {
+        .heading-responsive {
+            @apply text-5xl;
+        }
+        .hero-heading-responsive {
+            @apply text-8xl;
+        }
     }
     /* Safe area for mobile devices */
     .safe-area-top {
