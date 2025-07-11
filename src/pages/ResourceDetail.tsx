@@ -57,7 +57,13 @@ const ResourceDetail = () => {
       content: {
         instructor: "John Doe (Ex-Google, Ex-Facebook)",
         duration: "20 hours",
-        projects: 5,
+        projects: [
+          "Design a URL Shortener",
+          "Build a Chat Application",
+          "Create a Distributed File Storage",
+          "Design a Social Media Feed",
+          "Build a Real-time Analytics Dashboard"
+        ],
         lastUpdated: "April 2023",
         fileSize: "4.2 GB",
         downloadLink: "#",
@@ -93,13 +99,6 @@ const ResourceDetail = () => {
             lessons: 9,
             topics: ["Rate Limiting", "Queue Systems", "Event-Driven Architecture"]
           }
-        ],
-        projects: [
-          "Design a URL Shortener",
-          "Build a Chat Application",
-          "Create a Distributed File Storage",
-          "Design a Social Media Feed",
-          "Build a Real-time Analytics Dashboard"
         ]
       }
     },
